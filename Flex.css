@@ -1,0 +1,65 @@
+FlexBox
+/*Nos permite posicionar os elementos dentro da caixa
+Controle em uma dimensão (horizontal ou vertical)
+Alinhamento, direcionamento, ordenar e tamanhos*/
+
+div.parent {
+	display: flex;
+}
+Flex-direction
+Qual a direção do flex: horizontal ou vertical
+row | column
+Alinhamento
+justify-content
+align-items
+HTML
+
+<div class="container">
+  <div class="box blue"></div>
+  <div class="box red"></div>
+  <div class="box green"></div>
+</div>
+CSS
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.container {
+    /*A classe container é a caixa pai*/
+    width: 100vw;
+    display: flex;
+    /*ao aplicar o display flex, uma caixa fica ao lado da outra*/
+    /*Pode definir o tipo de definição do Flex
+    flex-direction: column;
+    flex-direction: row*/
+   
+    justify-content: center;
+    /*espaço entre elementos*/
+}
+.box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+
+
+
